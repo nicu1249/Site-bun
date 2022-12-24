@@ -11,7 +11,7 @@ import Test from "./Components/Test";
 function App() {
   return (
     <div>
-      <NavBar />
+      <NavBar/>
       <BrowserRouter>
         <Switch>
           <Route path="/" component={Homepage} exact />
@@ -21,6 +21,7 @@ function App() {
           <Route path="/Test" component={Test} />
         </Switch>
       </BrowserRouter>
+      <Bottom/>
     </div>
   );
 }

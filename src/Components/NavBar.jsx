@@ -10,8 +10,7 @@ export default function NavBar() {
       <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
         <HStack spacing={8} alignItems={'center'}>
           <Box>
-            <StarIcon />
-            
+            <StarIcon /> 
             </Box>
           <HStack
             as={'nav'}
@@ -19,6 +18,7 @@ export default function NavBar() {
             display={{ base: 'none', md: 'flex' }}>
           </HStack>
         </HStack>
+        <p>NUME SITE</p>
         <Flex alignItems={'center'}>
           <Menu>
             <MenuButton
