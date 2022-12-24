@@ -2,9 +2,8 @@ function First () {
     return(
         <div>
             <p>
-            Prima pagina baietii
+            Prima pagina baieti
             </p>
-            
         </div>
     );
 }
