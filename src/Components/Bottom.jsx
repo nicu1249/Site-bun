@@ -1,11 +1,11 @@
-function First () {
+function Bottom () {
     return(
         <div>
             <p>
-            Prima pagina baietii
+            Bottom
             </p>
             
         </div>
     );
 }
-export default First;
+export default Bottom;
