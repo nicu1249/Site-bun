@@ -15,12 +15,20 @@ function Homepage() {
  </div>
  <Spacer />
  <Spacer />
+ <Spacer />
+ <Spacer />
+ <Spacer />
+ <Spacer />
 <div>
   <p align='center'>CEVA TEXT SAU TITLU</p>
  
 </div>
 <Spacer />
 <Spacer />
+<Spacer />
+ <Spacer />
+ <Spacer />
+ <Spacer />
 <div>
 <Grid
   h='400px'

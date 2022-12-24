@@ -8,18 +8,7 @@ export default function NavBar() {
   return (
     <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
       <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-        <HStack spacing={8} alignItems={'center'}>
-          <Box>
-            <StarIcon /> 
-            </Box>
-          <HStack
-            as={'nav'}
-            spacing={4}
-            display={{ base: 'none', md: 'flex' }}>
-          </HStack>
-        </HStack>
-        <p>NUME SITE</p>
-        <Flex alignItems={'center'}>
+      <Flex alignItems={'center'}>
           <Menu>
             <MenuButton
               as={Button}
@@ -38,6 +27,17 @@ export default function NavBar() {
             </MenuList>
           </Menu>
         </Flex>
+        <HStack spacing={8} alignItems={'center'}>
+          <Box>
+            <p>NUME SITE</p>
+            </Box>
+          <HStack
+            as={'nav'}
+            spacing={4}
+            display={{ base: 'none', md: 'flex' }}>
+          </HStack>
+        </HStack>
+        <p></p>
       </Flex>
     </Box>
   );
