@@ -12,7 +12,6 @@ export default function Bottom() {
           <Box>
             <StarIcon />
             <StarIcon />
-            <StarIcon />
             </Box>
         </HStack>
         <p>ABOUT</p>
