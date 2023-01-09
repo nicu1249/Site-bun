@@ -3,14 +3,13 @@ import BG from "../BG.png";
 
 function Homepage() {
   return (
-    //<div style={{ backgroundImage: `url(${BG})` }}>
-    <div style={{ backgroundColor: 'RGB(42, 82, 190)' }}>
+    <div style={{ backgroundImage: `url(${BG})` }}>
     <div>
       <div style = {{height:"100vh"}}> 
       <Center position= 'absolute' top='20%' left= '32%' >
     <VStack>
-      <Heading>The No. 1 service provider across</Heading>
-      <Heading>all blockchains</Heading>
+      <Heading textColor='white'>The No. 1 service provider across</Heading>
+      <Heading textColor='white'>all blockchains</Heading>
   <HStack>
     <Box><p align='center'><Button>Request a service</Button></p></Box>
     <Box><p align='center'><Link style={{ textDecoration: 'none' }} href='https://discord.gg/occultlabs' isExternal><Button>Join our Community </Button></Link></p></Box>

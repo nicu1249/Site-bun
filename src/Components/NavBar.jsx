@@ -1,61 +1,24 @@
-import { ReactNode } from 'react';
-import {
-  Box,
-  Flex,
-  Avatar,
-  HStack,
-  Link,
-  IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-  Center,
-} from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, StarIcon } from '@chakra-ui/icons';
-
-const Links = ['Dashboard', 'Projects', 'Team'];
+import {Box, Flex, HStack, Link, IconButton, useDisclosure, useColorModeValue, Stack, Center } from '@chakra-ui/react';
+import {StarIcon } from '@chakra-ui/icons';
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={10}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <IconButton
-            size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={'Open Menu'}
-            display={{ md: 'none' }}S
-            onClick={isOpen ? onClose : onOpen}
-          />
-          <HStack>
-            <Box><Link to='/'><StarIcon /></Link> </Box>
+          <HStack spacing={2} alignItems={'center'}>
+            <Box>
+              <StarIcon />
+              </Box>
           </HStack>
-          <Center>
-          <HStack spacing={8} alignItems={'center'}>
-            <Box>Services</Box>
-            <Box>Badges</Box>
-            <Box>Casino</Box>
-          </HStack>
-          </Center>
-          <Flex alignItems={'center'}>
+          <p>Services</p>
+          <p>Badges</p>
+          <p>Casino</p>
+          <Flex>
+              <StarIcon />
           </Flex>
         </Flex>
-
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-            </Stack>
-          </Box>
-        ) : null}
       </Box>
-    </>
   );
 }
