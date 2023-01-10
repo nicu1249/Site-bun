@@ -1,24 +1,19 @@
-import {Box, Flex, HStack, Link, IconButton, useDisclosure, useColorModeValue, Stack, Center } from '@chakra-ui/react';
-import {StarIcon } from '@chakra-ui/icons';
+import { Box, Flex, HStack, Link, Text} from '@chakra-ui/react';
+import { StarIcon } from '@chakra-ui/icons';
 
 export default function Simple() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-      <Box px={10} align="center" justify="center" boxSize="full" bg="blackAlpha.700">
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}  >
-          <HStack spacing={2} alignItems={'center'}>
-            <Box>
-              <StarIcon />
-              </Box>
-          </HStack>
-          <p>Services</p>
-          <p>Badges</p>
-          <p>Casino</p>
-          <Flex>
-              <StarIcon />
-          </Flex>
-        </Flex>
-      </Box>
+    <Flex bg='RGB(65, 105, 225)' zIndex={2} h={14} alignItems={'center'} justifyContent={'space-between'} position='fixed' padding=' 0.7rem 2rem' width='100%' opacity='5'>
+      <HStack spacing={2} alignItems={'center'}>
+        <Box>
+          <StarIcon />
+        </Box>
+      </HStack>
+      <Text as='b' fontSize='xl' >Services</Text>
+      <Text as='b' fontSize='xl' >Badges</Text>
+      <Text as='b' fontSize='xl' >Casino</Text>
+      <StarIcon />
+    </Flex>
   );
 }

@@ -11,7 +11,7 @@ import Test from "./Components/Test";
 function App() {
   return (
     <div>
-      <NavBar/>
+      <NavBar fixed="top"/>
       <Router>
         <Switch>
           <Route exact path="/" component={Homepage} />
