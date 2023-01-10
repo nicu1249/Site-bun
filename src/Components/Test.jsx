@@ -1,9 +1,9 @@
-import { Grid, GridItem, VStack, StackDivider, Box, Flex, HStack, ScaleFade, Center, Image, Button, Heading, Link} from '@chakra-ui/react'
+import { Grid, GridItem, VStack, StackDivider, Box, Flex, HStack, ScaleFade, Center, Image, Button, Heading, Link, Spacer, Text} from '@chakra-ui/react'
 import BG from "../BG.png";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 
-function Homepage() {
+function Test() {
  const ref = useRef(null);
  const { enterCount } = useInViewport(
     ref,
@@ -39,14 +39,13 @@ function Homepage() {
 <Grid
   templateRows='repeat(2, 1fr)'
   templateColumns='repeat(2, 1fr)'
-  gap={4}
+  columnGap='0rem'
+  rowGap={1}
 >
 
-  <GridItem sx={{ borderRadius: "15%" }} boxSize="300px" colSpan={1} bg='tomato'> <p>We strive for quality</p><p>Our state of the art applications and web3 integrations are individually shaped to your needs, made to offer you and your users the most aesthetic pleasing and interactive platforms. Everything is designed to your wishes.
-</p></GridItem>
-
-  <GridItem sx={{ borderRadius: "15%" }} boxSize="600px" rowSpan={2} colSpan={1}  bg='tomato' ><p>Endless possibilities</p><p>We encourage innovation. Aside from our basic services listed we also do custom dev-work, shaping your dreams and ambitions into platforms your users can enjoy, and bring utility to your project like no one has ever done before. What you can imagine, we can build. </p> </GridItem>
-  <GridItem sx={{ borderRadius: "15%" }} boxSize="300px" rowSpan={1} bg='tomato' > <p>100% On-chain</p><p>All our builds are 100% On-chain with our smart contracts being custom made per-request, offering you a fun and safe environment you can put at your users disposal.</p></GridItem>
+  <GridItem sx={{ borderRadius: "15%" }} boxSize="300px" colSpan={1} bg='RGB(65, 105, 225)'> <Text marginTop={1} marginBottom={4} marginTop={3} textAlign='center' fontSize='2xl' as='b' noOfLines={1}>We strive for quality</Text> <Text  marginLeft={2} as='cite' fontSize='lg'>Our state of the art applications and web3 integrations are individually shaped to your needs, made to offer you and your users the most aesthetic pleasing and interactive platforms. Everything is designed to your wishes.</Text></GridItem>
+  <GridItem sx={{ borderRadius: "15%" }} boxSize="600px" rowSpan={2} colSpan={1}  bg='RGB(65, 105, 225)' ><Text marginTop={4} marginBottom={39} marginTop={3} textAlign='center' fontSize='5xl' as='b' noOfLines={1}>Endless possibilities</Text><Text  marginLeft={2} as='cite' fontSize='2xl'>We encourage innovation. Aside from our basic services listed we also do custom dev-work, shaping your dreams and ambitions into platforms your users can enjoy, and bring utility to your project like no one has ever done before. What you can imagine, we can build. </Text> </GridItem>
+  <GridItem sx={{ borderRadius: "15%" }} boxSize="300px" rowSpan={1} bg='RGB(65, 105, 225)' > <Text marginTop={1} marginBottom={4} marginTop={3} textAlign='center' fontSize='2xl' as='b' noOfLines={1}>100% On-chain</Text><Text  marginLeft={2} as='cite' fontSize='lg'>All our builds are 100% On-chain with our smart contracts being custom made per-request, offering you a fun and safe environment you can put at your users disposal.</Text></GridItem>
 
 </Grid>
 </HStack>
@@ -57,4 +56,4 @@ function Homepage() {
   </div>
   );
 }
-export default Homepage;
+export default Test;

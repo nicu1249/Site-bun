@@ -5,8 +5,8 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={10}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box px={10} align="center" justify="center" boxSize="full" bg="blackAlpha.700">
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}  >
           <HStack spacing={2} alignItems={'center'}>
             <Box>
               <StarIcon />
