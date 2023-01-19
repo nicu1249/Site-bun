@@ -1,4 +1,4 @@
-import { Grid, GridItem, VStack, StackDivider, Box, Flex, HStack, ScaleFade, Center, Image, Button, Heading, Link, Spacer, Text} from '@chakra-ui/react'
+import { Grid, GridItem, VStack, Box, HStack, ScaleFade, Center, Button, Heading, Link, Text} from '@chakra-ui/react'
 import BG from "../BG.png";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";

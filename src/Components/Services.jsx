@@ -1,10 +1,10 @@
-import { Image, Box, HStack, Center, Divider, VStack, Flex, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Button, Drawer, useDisclosure  } from '@chakra-ui/react'
+import { Image, Box, HStack, Center, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Drawer,/* useDisclosure*/ } from '@chakra-ui/react'
 import circle from "../circle.png";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 
 function Services() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+   //const { isOpen, onOpen, onClose } = useDisclosure()
 
     const ref = useRef(null);
     const { enterCount } = useInViewport(
@@ -41,7 +41,7 @@ function Services() {
            <p>- Custom Dev Work </p>
         </div>
         <Box in={enterCount} ref={ref}>
-        <Drawer placement='right'  >
+        <Drawer placement='right' >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerHeader borderBottomWidth='2px'>Basic Drawer</DrawerHeader>

@@ -18,7 +18,7 @@ function Badges () {
         </HStack>
         </Center>
         <Divider />
-        <Box bg="RGB(255, 242, 242)" sx={{ borderRadius: "10%" }}>
+        <Box bg="RGB(255, 242, 242)" >
             <HStack>
            <Image boxSize="100px" src={circle} />
            <Center>

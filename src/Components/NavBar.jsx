@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Link, Text} from '@chakra-ui/react';
+import { Box, Flex, HStack, Text} from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 
 export default function Simple() {

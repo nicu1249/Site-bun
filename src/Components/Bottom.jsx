@@ -1,5 +1,5 @@
-import { Box, Flex, HStack, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider, useColorModeValue, Link, Image, VStack } from '@chakra-ui/react';
-import { HamburgerIcon, StarIcon } from '@chakra-ui/icons';
+import {Flex, HStack} from '@chakra-ui/react';
+import { StarIcon } from '@chakra-ui/icons';
 import {FaDiscord} from 'react-icons/fa';
 import {BsTwitter} from 'react-icons/bs';
 

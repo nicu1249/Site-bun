@@ -5,7 +5,6 @@ import Homepage from "./Components/Homepage";
 import Bottom from "./Components/Bottom";
 import Badges from "./Components/Badges";
 import Services from "./Components/Services";
-import Test from "./Components/Test";
 
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route path="/Badges" component={Badges} />
           <Route path="/Services" component={Services} />
-          <Route path="/Test" component={Test} />
         </Switch>
       </Router>
       <Bottom/>
